@@ -1,0 +1,10 @@
+import xarray as xr
+
+ds = xr.open_dataset("argo_indian_ocean_2024_real.nc")
+
+print(ds)
+print(ds.data_vars)
+
+print("Temperature:", ds["TEMP"])
+print("Salinity:", ds["PSAL"])
+print("Pressure:", ds["PRES"])
